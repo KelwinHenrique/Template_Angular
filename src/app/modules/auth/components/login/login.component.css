@@ -2,7 +2,6 @@
   margin: auto;
   width: 100%;
   max-width: 35rem;
-  flex: 1;
 }
 
 .title {
@@ -19,19 +18,6 @@
   line-height: 2;
 }
 
-.accept-group {
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  margin: 1rem 0;
-}
-
-.certer-vert {
-  height: calc(100vh - 2 * 2.5rem);
-  display: flex;
-}
-
 .form-control-group {
   margin: 20px;
 }
-
