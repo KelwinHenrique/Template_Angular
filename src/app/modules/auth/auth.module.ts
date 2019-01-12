@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { NbSidebarModule, NbLayoutModule, NbSidebarService, NbInputModule, NbCardModule } from '@nebular/theme';
+import { NbSidebarModule, NbLayoutModule, NbSidebarService, NbInputModule, NbCardModule, NbButtonModule, NbCheckboxModule } from '@nebular/theme';
 
 import { LoginComponent } from './components/login/login.component';
 
@@ -14,7 +14,9 @@ import { AuthRoutingModule } from './auth-routing.module';
     NbSidebarModule,
     NbInputModule,
     NbCardModule,
-    CommonModule
+    CommonModule,
+    NbButtonModule,
+    NbCheckboxModule,
   ],
   providers: [NbSidebarService],
   declarations: [LoginComponent]
