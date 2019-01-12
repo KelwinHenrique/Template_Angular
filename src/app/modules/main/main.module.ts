@@ -1,28 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RouterModule } from '@angular/router';
-/**
- * Componnets Nebular
- */
-import { NbSidebarModule, NbLayoutModule, NbSidebarService } from '@nebular/theme';
+import { NbSidebarModule, NbLayoutModule, NbSidebarService, NbInputModule, NbCardModule } from '@nebular/theme';
 
+import { MainRoutingModule } from './main-routing.module';
 
 import { MainScreenComponent } from './components/main-screen/main-screen.component';
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(
-      [
-        { path: "", component: MainScreenComponent}
-      ]
-    ),
+    MainRoutingModule,
     NbLayoutModule,
     NbSidebarModule,
+    NbInputModule,
+    NbCardModule,
     CommonModule
   ],
   providers: [NbSidebarService],
-  declarations: [MainScreenComponent],
-  exports: [MainScreenComponent]
+  declarations: [MainScreenComponent]
 })
 export class MainModule { }
