@@ -1,3 +1,6 @@
 export class Error {
-  public errors: string[]
+  constructor(
+    public errors: string[],
+    public status: number
+  ) { };
 }
