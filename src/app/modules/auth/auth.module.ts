@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 
 import { AuthRoutingModule } from './auth-routing.module';
 import { RequestPasswordComponent } from './components/request-password/request-password.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 
 @NgModule({
   imports: [
@@ -23,6 +24,6 @@ import { RequestPasswordComponent } from './components/request-password/request-
     NbToastrModule.forRoot(),
   ],
   providers: [NbSidebarService],
-  declarations: [LoginComponent, RequestPasswordComponent]
+  declarations: [LoginComponent, RequestPasswordComponent, ResetPasswordComponent]
 })
 export class AuthModule { }

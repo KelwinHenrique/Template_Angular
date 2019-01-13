@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { Login } from '../../shared/models/auth/login.model'
+import { ResetPassword } from '../../shared/models/auth/reset-password.mode'
 
 @Injectable()
 export class AuthService {
@@ -15,6 +16,10 @@ export class AuthService {
 
   public requestPassword(email: string): Observable<any> {
     return this.http.post<any>('http://localhost:3008/oapi/user/forgotPassword', email)
+  }
+
+  public resetPassword(id: string, resetPassword: ResetPassword): Observable<any> {
+    return this.http.post<any>(`http://localhost:3008/oapi/user/changePassword/${id}`, resetPassword)
   }
 
 

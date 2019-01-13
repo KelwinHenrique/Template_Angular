@@ -1,0 +1,6 @@
+export class UserSimple {
+  constructor(
+    public name: string,
+    public email: string,
+  ) { };
+}
