@@ -7,6 +7,7 @@ import { NbSidebarModule, NbLayoutModule, NbSidebarService, NbInputModule, NbCar
 import { LoginComponent } from './components/login/login.component';
 
 import { AuthRoutingModule } from './auth-routing.module';
+import { RequestPasswordComponent } from './components/request-password/request-password.component';
 
 @NgModule({
   imports: [
@@ -22,6 +23,6 @@ import { AuthRoutingModule } from './auth-routing.module';
     NbToastrModule.forRoot(),
   ],
   providers: [NbSidebarService],
-  declarations: [LoginComponent]
+  declarations: [LoginComponent, RequestPasswordComponent]
 })
 export class AuthModule { }

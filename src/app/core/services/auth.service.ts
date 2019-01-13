@@ -13,5 +13,9 @@ export class AuthService {
     return this.http.post<any>('http://localhost:3008/oapi/user/login', login)
   }
 
+  public requestPassword(email: string): Observable<any> {
+    return this.http.post<any>('http://localhost:3008/oapi/user/forgotPassword', email)
+  }
+
 
 }
