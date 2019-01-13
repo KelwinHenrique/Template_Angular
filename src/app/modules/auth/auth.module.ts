@@ -18,7 +18,7 @@ import { AuthRoutingModule } from './auth-routing.module';
     NbCardModule,
     CommonModule,
     NbButtonModule,
-    NbCheckboxModule,
+    NbCheckboxModule
   ],
   providers: [NbSidebarService],
   declarations: [LoginComponent]
