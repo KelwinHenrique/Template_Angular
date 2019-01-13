@@ -22,5 +22,7 @@ export class AuthService {
     return this.http.post<any>(`http://localhost:3008/oapi/user/changePassword/${id}`, resetPassword)
   }
 
-
+  public validateToken(idToken: string): Observable<boolean> {
+    return this.http.post<boolean>('http://localhost:3008/oapi/validateToken', { token: idToken })
+  }
 }

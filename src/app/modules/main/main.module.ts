@@ -6,6 +6,7 @@ import { NbSidebarModule, NbLayoutModule, NbSidebarService, NbInputModule, NbCar
 import { MainRoutingModule } from './main-routing.module';
 
 import { MainScreenComponent } from './components/main-screen/main-screen.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { MainScreenComponent } from './components/main-screen/main-screen.compon
     CommonModule
   ],
   providers: [NbSidebarService],
-  declarations: [MainScreenComponent]
+  declarations: [MainScreenComponent, MenuComponent]
 })
 export class MainModule { }

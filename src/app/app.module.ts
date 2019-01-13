@@ -9,6 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
+import { AuthGuard } from './core/services/auth-guard.service'
+import { AuthService } from './core/services/auth.service'
+
 
 
 
@@ -23,7 +26,7 @@ import { AppComponent } from './app.component';
     NbThemeModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
